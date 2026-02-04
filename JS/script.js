@@ -1,6 +1,7 @@
 const donateBtn = document.getElementById('Donate-btn');
 const noakhali = document.getElementById('content-text').innerText;
 const date = new Date().toLocaleString('en-BD');
+const model = document.getElementById('modal');
 
 donateBtn.addEventListener('click', function (event) {
     event.preventDefault();
@@ -29,6 +30,10 @@ donateBtn.addEventListener('click', function (event) {
     <p> Date: ${date} GMT +0600 (Bangladesh Standard Time)</P>
     `
     document.getElementById('history-itmes').appendChild(div);
+
+    
+
+
 })
 
 

@@ -34,7 +34,7 @@
         <!-- button section -->
         <section class="flex justify-center text-center gap-2">
             <button id="Donation-btn" class="py-1 px-4 bg-[#B4F461] border-2 font-bold rounded-md">Donation</button>
-            <button id="history-btn" class="py-1 px-4 border-2 font-bold rounded-md">History</button>
+            <button id="history-btn" class="py-1 px-4 bg-blue-200 border-2 font-bold rounded-md">History</button>
         </section>
 
         <!-- frist card section -->
@@ -62,11 +62,71 @@
                     <button id="Donate-btn" class="btn btn-ghost bg-[#B4F461] font-bold rounded-md">Donate Now</button>
                 </div>
             </div>
+
+            <!-- sceond card section -->
+            <div class="lg:flex justify-between p-4 border-2 border-gray-100 rounded-lg mt-4 ">
+                <div class="lg:w-1/2">
+                    <img src="assets/feni.png" alt="">
+                </div>
+                <div class="lg:w-1/2 flex justify-items-start flex-col justify-center gap-6">
+                    <button
+                        class="py-1 px-4 w-32  flex justify-items-center gap-2 bg-[#F9F7F3] rounded-md justify-center">
+                        <img src="assets/coin.png">
+                        <p id="Noakhali-Blance">300</p><span>BDT</span>
+                    </button>
+                    <h1 id="content-text" class="font-bold">Donate for Flood Relief in Feni,Bangladesh</h1>
+                    <p class="text-gray-500"> The recent floods in Noakhali have caused significant damage to homes
+                        infrastructure. Your donation
+                        will help provide essential supplies and to those affected by this disaster. Every contribution,
+                        big
+                        or small, makes difference. Please join us in supporting the relief efforts and making a
+                        positive
+                        impact on the lives of those in need.</p>
+                    <input id="Noakhali-input" class="w-full py-2 border-2 border-gray-100 pl-2" type="text"
+                        placeholder="Write Donation Amount">
+                    <button id="Donate-btn" class="btn btn-ghost bg-[#B4F461] font-bold rounded-md">Donate Now</button>
+                </div>
+            </div>
+            <div class="lg:flex justify-between p-4 border-2 border-gray-100 rounded-lg mt-4 ">
+                <div class="lg:w-1/2">
+                    <img src="assets/noakhali.png" alt="">
+                </div>
+                <div class="lg:w-1/2 flex justify-items-start flex-col justify-center gap-6">
+                    <button
+                        class="py-1 px-4 w-32  flex justify-items-center gap-2 bg-[#F9F7F3] rounded-md justify-center">
+                        <img src="assets/coin.png">
+                        <p id="Noakhali-Blance">100</p><span>BDT</span>
+                    </button>
+                    <h1 id="content-text" class="font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
+                    <p class="text-gray-500"> The recent floods in Noakhali have caused significant damage to homes
+                        infrastructure. Your donation
+                        will help provide essential supplies and to those affected by this disaster. Every contribution,
+                        big
+                        or small, makes difference. Please join us in supporting the relief efforts and making a
+                        positive
+                        impact on the lives of those in need.</p>
+                    <input id="Noakhali-input" class="w-full py-2 border-2 border-gray-100 pl-2" type="text"
+                        placeholder="Write Donation Amount">
+                    <button id="Donate-btn" class="btn btn-ghost bg-[#B4F461] font-bold rounded-md">Donate Now</button>
+                </div>
+            </div>
         </section>
 
         <!-- History section -->
         <section id="history" class="hidden mt-4 p-4">
-            <div id="history-itmes">               
+            <div id="history-itmes">
+            </div>
+        </section>
+
+        <!-- donate popup section -->
+        <section class="hidden" id="modal">
+            <div class="flex flex-col justify-center justify-items-center gap-4 text-center border-2 w-2/5 p-4 mx-auto">
+                <h1 class="text-2xl font-bold">Congrates</h1>
+                <div class="flex justify-center"> <img class="h-8 w-8 " src="assets/coin.png" alt="">
+                </div>
+                <p>You Habe Donated for Humankind</p>
+                <h2 class="text-xl font-bold">SuccesfullY</h2>
+                <button class="bg-gray-300 w-2/5 mx-auto p-2 rounded-md font-bold">close confirmation</button>
             </div>
         </section>
 
@@ -75,9 +135,8 @@
     </footer>
     <script src="JS/script.js"></script>
     <script src="JS/utilities.js"></script>
-    <script src="JS/history.js"></script>
     <script src="JS/features.js"></script>
-    
+
 </body>
 
 </html>

@@ -1,9 +1,6 @@
 const donateBtn = document.getElementById('Donate-btn');
-// const noakhaliBlance = document.getElementById('Noakhali-Blance').innerText;
-// const noakhaliInput = document.getElementById('Noakhali-input');
-// const mainBlance = document.getElementById('Main-Blance').innerText;
-
-
+const noakhali = document.getElementById('content-text').innerText;
+const date = new Date().toLocaleString('en-BD');
 
 donateBtn.addEventListener('click', function (event) {
     event.preventDefault();
@@ -14,16 +11,24 @@ donateBtn.addEventListener('click', function (event) {
     const newBlance = noakhaliInput + noakhaliBlance;
     const donateBlance = mainBlance - noakhaliInput;
 
-
-     if (isNaN(noakhaliInput)) {
+    if (isNaN(noakhaliInput || noakhaliInput <= 0)) {
         alert('Please enter a valid number');
         return;
     }
-
+    if (mainBlance < noakhaliInput) {
+        alert('Insufficient balance 😢')
+        return
+    }
     document.getElementById('Noakhali-Blance').innerText = newBlance;
     document.getElementById('Main-Blance').innerText = donateBlance;
 
-
+    const div = document.createElement('div');
+    div.classList.add('p-4', 'mt-4', 'border-2');
+    div.innerHTML = `
+    <h4 class="text-xl font-bold">${newBlance} Taka is ${noakhali} </h4>
+    <p> Date: ${date} GMT +0600 (Bangladesh Standard Time)</P>
+    `
+    document.getElementById('history-itmes').appendChild(div);
 })
 
 

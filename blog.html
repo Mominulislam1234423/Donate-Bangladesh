@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <section class="w-4/5 mt-8 mx-auto">
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title font-semibold">What is DOM?</div>
+            <div class="collapse-content text-sm">DOM (Document Object Model) represents the HTML page as a tree
+                structure and allows JS to manipulate it.</div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title font-semibold">How to select an element from the DOM?
+            </div>
+            <div class="collapse-content text-sm">Use getElementById(), getElementsByClassName(), querySelector(), or
+                querySelectorAll() to select elements.</div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title font-semibold">What is event delegation and why is it useful?
+            </div>
+            <div class="collapse-content text-sm">Event delegation is adding a listener on a parent to handle child
+                elements. It saves memory and handles dynamic elements.
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title font-semibold">How to manipulate an element’s attributes and styles?
+            </div>
+            <div class="collapse-content text-sm">Use setAttribute() for attributes and style or classList to change
+                styles.
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title font-semibold">What is the difference between innerHTML, innerText, and textContent?
+            </div>
+            <div class="collapse-content text-sm">innerHTML gets/sets HTML content, innerText gets/sets visible text, textContent gets/sets all text.
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title font-semibold">How to add or remove classes in DOM?
+            </div>
+            <div class="collapse-content text-sm">Use element.classList.add(), element.classList.remove(), or element.classList.toggle().
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title font-semibold">How to create a new element in DOM?
+            </div>
+            <div class="collapse-content text-sm">Use document.createElement("tagName") and append it with appendChild() or append().
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title font-semibold">How to remove an element from DOM?
+            </div>
+            <div class="collapse-content text-sm">Use element.remove() or parent.removeChild(child).
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title font-semibold">How to listen for events on elements?
+            </div>
+            <div class="collapse-content text-sm">Use element.addEventListener("event", callbackFunction).
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title font-semibold">What is parentNode, childNodes, and nextSibling?
+            </div>
+            <div class="collapse-content text-sm">They allow navigation in DOM tree: parentNode → parent, childNodes → children, nextSibling → next node.
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

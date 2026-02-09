@@ -2,6 +2,7 @@ const donateBtn = document.getElementById('Donate-btn');
 const noakhali = document.getElementById('content-text').innerText;
 const date = new Date().toLocaleString('en-BD');
 const model = document.getElementById('modal');
+const blogBtn = document.getElementById('blog-btn');
 
 donateBtn.addEventListener('click', function (event) {
     event.preventDefault();
@@ -103,4 +104,6 @@ donateBtn3.addEventListener('click', function (event) {
     document.getElementById('history-itmes').appendChild(div);
 })
 
-
+blogBtn.addEventListener('click', function () {
+    window.location.href = './blog.html';
+})

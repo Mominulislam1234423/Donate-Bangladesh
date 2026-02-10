@@ -1,7 +1,7 @@
 # Donate Bangladesh 🇧🇩
 
-Donate Bangladesh একটি simple donation platform যেখানে বিভিন্ন humanitarian cause এর জন্য donation করা যায়।  
-এই project টি frontend-based এবং HTML, JavaScript, Tailwind CSS ও DaisyUI ব্যবহার করে তৈরি করা হয়েছে।
+Donate Bangladesh is a simple donation platform where donations can be made for various humanitarian causes.
+This project is frontend-based and has been developed using HTML, JavaScript, Tailwind CSS, and DaisyUI.
 
 ## 🔗 Live Preview
 https://mominulislam1234423.github.io/Donate-Bangladesh/

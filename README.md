@@ -20,3 +20,4 @@ https://mominulislam1234423.github.io/Donate-Bangladesh/
 - **DaisyUI**
 
 ## 📂 Project Structure
+![Donate Bangladesh Screenshot](./assets/screenshot.png)
